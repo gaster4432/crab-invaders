@@ -729,8 +729,9 @@ impl Game {
             self.fire_guns();
         }
 
-        // --- spawn next wave when cleared ---
-        if self.enemies.is_empty() && self.powerups.is_empty() {
+        // --- spawn next wave as soon as all enemies are dead ---
+        // (leftover power-up pickups stay on screen into the next wave)
+        if self.enemies.is_empty() {
             self.spawn_timer += dt;
             if self.spawn_timer > 1.2 {
                 self.wave += 1;
@@ -1188,10 +1189,7 @@ impl Game {
             );
         }
 
-        if self.enemies.is_empty()
-            && self.powerups.is_empty()
-            && self.state == State::Playing
-        {
+        if self.enemies.is_empty() && self.state == State::Playing {
             let msg = format!("WAVE {} INCOMING", self.wave + 1);
             let m = measure_text(&msg, None, 32, 1.0);
             draw_text(&msg, w / 2.0 - m.width / 2.0, h / 2.0, 32.0, YELLOW);

@@ -1,6 +1,6 @@
 [package]
 name = "crab-invaders"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 description = "A fast 2D arcade space shooter written in Rust"
 homepage = "https://github.com/gaster4432/crab-invaders"
