@@ -12,11 +12,39 @@ No assets, no config — just shoot.
 | Arrows / WASD | Move |
 | Space / J | Shoot |
 | P / Esc | Pause |
-| Enter | Start / retry |
+| M | Mute |
+| Enter / Click | Menu select |
 | Ctrl+Q | Quit |
 
-3 enemy types, endless waves, hi-score, particles, screen shake.
-+1 life every 5 waves (max 5).
+3 enemy types, endless waves, hi-score (saved to disk),
+particles, screen shake. +1 life every 5 waves (max 5).
+
+Menus: START / HOW TO PLAY / SETTINGS (mute + volume) / QUIT,
+pause menu, and game-over screen — all keyboard and mouse driven.
+
+## Power-ups
+
+Kills drop lettered pickups (tanks drop more often):
+
+| Letter | Effect |
+|--------|--------|
+| S | Spread shot (12s) |
+| R | Rapid fire (10s) |
+| H | Shield — absorbs one hit |
+| B | Bomb — wipes the screen |
+| + | +1 life (rare) |
+| M | Magnet — pulls pickups, zaps nearby bullets (12s) |
+| F | Freeze — slows + disarms enemies (8s) |
+| P | Piercing bullets (12s) |
+| 2 | Double score (15s) |
+
+## Audio
+
+All sound is synthesized at startup — no audio files.
+SFX for shooting, explosions, pickups, UI, plus a looping
+chiptune track. `M` mutes; volume in SETTINGS.
+Hi-score, mute, and volume persist in
+`~/.config/crab-invaders/save`.
 
 ## Run from source
 

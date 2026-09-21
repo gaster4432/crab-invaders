@@ -1,6 +1,6 @@
 # Maintainer: gaster4432
 pkgname=crab-invaders
-pkgver=0.1.0
+pkgver=0.2.0
 pkgrel=1
 pkgdesc='A fast 2D arcade space shooter written in Rust'
 arch=('x86_64' 'aarch64')

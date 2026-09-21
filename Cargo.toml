@@ -1,6 +1,6 @@
 [package]
 name = "crab-invaders"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 description = "A fast 2D arcade space shooter written in Rust"
 homepage = "https://github.com/gaster4432/crab-invaders"
@@ -10,7 +10,7 @@ keywords = ["game", "arcade", "shooter", "macroquad"]
 categories = ["games"]
 
 [dependencies]
-macroquad = "0.4"
+macroquad = { version = "0.4", features = ["audio"] }
 
 [profile.release]
 opt-level = 3
