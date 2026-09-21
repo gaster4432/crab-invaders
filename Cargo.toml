@@ -1,0 +1,19 @@
+[package]
+name = "crab-invaders"
+version = "0.1.0"
+edition = "2021"
+description = "A fast 2D arcade space shooter written in Rust"
+homepage = "https://github.com/gaster4432/crab-invaders"
+repository = "https://github.com/gaster4432/crab-invaders"
+license = "MIT"
+keywords = ["game", "arcade", "shooter", "macroquad"]
+categories = ["games"]
+
+[dependencies]
+macroquad = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
+codegen-units = 1
