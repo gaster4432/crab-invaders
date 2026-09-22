@@ -1,8 +1,8 @@
-pkgbase = crab-invaders
+pkgbase = shell-shooter
 	pkgdesc = A fast 2D arcade space shooter written in Rust
 	pkgver = 0.2.1
 	pkgrel = 1
-	url = https://github.com/gaster4432/crab-invaders
+	url = https://github.com/gaster4432/shell-shooter
 	arch = x86_64
 	arch = aarch64
 	license = MIT
@@ -14,7 +14,7 @@ pkgbase = crab-invaders
 	depends = libxi
 	depends = libxcursor
 	depends = alsa-lib
-	source = crab-invaders-0.2.1.tar.gz::https://github.com/gaster4432/crab-invaders/archive/v0.2.1.tar.gz
-	sha256sums = d90aa0dc33f66916bee5cbfb29f487ac1ddaf5734bee09f9424a6acf40e24366
+	source = shell-shooter-0.2.1.tar.gz::https://github.com/gaster4432/shell-shooter/archive/v0.2.1.tar.gz
+	sha256sums = 0234d8538bfa4396ff2c47981450063baf4e846c91a9d870a9de2c8f2cbed0d0
 
-pkgname = crab-invaders
+pkgname = shell-shooter
