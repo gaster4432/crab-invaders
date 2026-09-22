@@ -1,6 +1,6 @@
 pkgbase = shell-shooter
 	pkgdesc = A fast 2D arcade space shooter written in Rust
-	pkgver = 0.2.1
+	pkgver = 0.3.0
 	pkgrel = 1
 	url = https://github.com/gaster4432/shell-shooter
 	arch = x86_64
@@ -14,7 +14,7 @@ pkgbase = shell-shooter
 	depends = libxi
 	depends = libxcursor
 	depends = alsa-lib
-	source = shell-shooter-0.2.1.tar.gz::https://github.com/gaster4432/shell-shooter/archive/v0.2.1.tar.gz
+	source = shell-shooter-0.3.0.tar.gz::https://github.com/gaster4432/shell-shooter/archive/v0.3.0.tar.gz
 	sha256sums = 0234d8538bfa4396ff2c47981450063baf4e846c91a9d870a9de2c8f2cbed0d0
 
 pkgname = shell-shooter
