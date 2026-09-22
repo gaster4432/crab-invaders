@@ -1,10 +1,10 @@
 [package]
-name = "crab-invaders"
-version = "0.2.1"
+name = "shell-shooter"
+version = "0.3.0"
 edition = "2021"
 description = "A fast 2D arcade space shooter written in Rust"
-homepage = "https://github.com/gaster4432/crab-invaders"
-repository = "https://github.com/gaster4432/crab-invaders"
+homepage = "https://github.com/gaster4432/shell-shooter"
+repository = "https://github.com/gaster4432/shell-shooter"
 license = "MIT"
 keywords = ["game", "arcade", "shooter", "macroquad"]
 categories = ["games"]

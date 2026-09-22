@@ -78,13 +78,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "crab-invaders"
-version = "0.2.1"
-dependencies = [
- "macroquad",
-]
-
-[[package]]
 name = "crc32fast"
 version = "1.5.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -349,6 +342,13 @@ dependencies = [
  "libc",
  "quad-alsa-sys",
  "winapi",
+]
+
+[[package]]
+name = "shell-shooter"
+version = "0.3.0"
+dependencies = [
+ "macroquad",
 ]
 
 [[package]]

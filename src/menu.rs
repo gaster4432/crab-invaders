@@ -81,7 +81,7 @@ pub fn clicked_on(rect: &Rect, mx: f32, my: f32) -> bool {
 }
 
 pub fn draw_title(w: f32, h: f32, hi: u32) {
-    let title = "CRAB INVADERS";
+    let title = "SHELL SHOOTER";
     let ts = measure_text(title, None, 64, 1.0);
     draw_text(title, w / 2.0 - ts.width / 2.0, h / 2.0 - 90.0, 64.0, ORANGE);
     let sub = "a tiny arcade shooter";

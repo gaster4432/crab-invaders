@@ -1,10 +1,10 @@
 # Maintainer: gaster4432
-pkgname=crab-invaders
+pkgname=shell-shooter
 pkgver=0.2.1
 pkgrel=1
 pkgdesc='A fast 2D arcade space shooter written in Rust'
 arch=('x86_64' 'aarch64')
-url='https://github.com/gaster4432/crab-invaders'
+url='https://github.com/gaster4432/shell-shooter'
 license=('MIT')
 depends=('gcc-libs' 'glibc' 'libglvnd' 'libx11' 'libxi' 'libxcursor' 'alsa-lib')
 makedepends=('cargo')

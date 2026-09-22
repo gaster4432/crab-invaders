@@ -111,7 +111,7 @@ const OVER_ITEMS: [&str; 2] = ["RETRY", "MENU"];
 
 fn window_conf() -> Conf {
     Conf {
-        window_title: "Crab Invaders".to_owned(),
+        window_title: "Shell Shooter".to_owned(),
         window_width: 800,
         window_height: 600,
         window_resizable: true,

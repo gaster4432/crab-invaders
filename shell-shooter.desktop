@@ -1,11 +1,12 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
 Version=1.0
-Name=Crab Invaders
+Name=Shell Shooter
 GenericName=Arcade Shooter
 Comment=A fast 2D arcade space shooter written in Rust
-Exec=crab-invaders
-Icon=crab-invaders
+Exec=shell-shooter
+Icon=shell-shooter
 Terminal=false
 Categories=Game;ArcadeGame;
 Keywords=game;arcade;shooter;space;

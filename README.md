@@ -1,4 +1,4 @@
-# Crab Invaders
+# Shell Shooter
 
 A fast 2D arcade space shooter written in Rust + [macroquad](https://github.com/not-fl3/macroquad).
 No assets, no config — just shoot.
@@ -44,7 +44,7 @@ All sound is synthesized at startup — no audio files.
 SFX for shooting, explosions, pickups, UI, plus a looping
 chiptune track. `M` mutes; volume in SETTINGS.
 Hi-score, mute, and volume persist in
-`~/.config/crab-invaders/save`.
+`~/.config/shell-shooter/save`.
 
 ## Run from source
 
@@ -59,37 +59,37 @@ normal X11/GL/ALSA runtime libs that Arch already has.
 
 ```bash
 # after pushing to the AUR:
-yay -S crab-invaders
+yay -S shell-shooter
 # or manual:
-git clone https://aur.archlinux.org/crab-invaders.git
-cd crab-invaders
+git clone https://aur.archlinux.org/shell-shooter.git
+cd shell-shooter
 makepkg -si
 ```
 
-Binary installs to `/usr/bin/crab-invaders` plus a `.desktop` entry.
+Binary installs to `/usr/bin/shell-shooter` plus a `.desktop` entry.
 
 ## Packaging notes (for maintainer)
 
-1. Push this repo to GitHub, tag `v0.1.0`:
+1. Push this repo to GitHub, tag `v0.3.0`:
    ```bash
    git init
    git add .
-   git commit -m "Crab Invaders 0.1.0"
-   git remote add origin https://github.com/gaster4432/crab-invaders
-   git tag v0.1.0
+   git commit -m "Shell Shooter 0.3.0"
+   git remote add origin https://github.com/gaster4432/shell-shooter
+   git tag v0.3.0
    git push -u origin master --tags
    ```
 2. Update `PKGBUILD`:
    - `Maintainer:` line, `url=`, `source=`
    - run `updpkgsums && makepkg --printsrcinfo > .SRCINFO`
-3. Test: `makepkg -si` then `namcap PKGBUILD` and `namcap crab-invaders-*.pkg.tar.zst`
+3. Test: `makepkg -si` then `namcap PKGBUILD` and `namcap shell-shooter-*.pkg.tar.zst`
 4. Publish:
    ```bash
-   git clone ssh://aur@aur.archlinux.org/crab-invaders.git aur-pkg
-   cp PKGBUILD .SRCINFO crab-invaders.desktop aur-pkg/
+   git clone ssh://aur@aur.archlinux.org/shell-shooter.git aur-pkg
+   cp PKGBUILD .SRCINFO shell-shooter.desktop aur-pkg/
    cd aur-pkg && makepkg --printsrcinfo > .SRCINFO
-   git add PKGBUILD .SRCINFO crab-invaders.desktop
-   git commit -m "0.1.0-1" && git push
+   git add PKGBUILD .SRCINFO shell-shooter.desktop
+   git commit -m "0.3.0-1" && git push
    ```
 
 See [Arch Rust packaging guidelines](https://wiki.archlinux.org/title/Rust_package_guidelines).
@@ -100,7 +100,7 @@ See [Arch Rust packaging guidelines](https://wiki.archlinux.org/title/Rust_packa
 Cargo.toml              # macroquad = "0.4", release LTO + strip
 src/main.rs             # whole game (~600 lines, zero assets)
 PKGBUILD                # AUR source build
-crab-invaders.desktop   # desktop entry
+shell-shooter.desktop   # desktop entry
 LICENSE                 # MIT
 ```
 

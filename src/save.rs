@@ -1,6 +1,6 @@
 //! Hi-score + settings persistence.
 //! Stored as a tiny key=value text file so there are no extra dependencies:
-//! `$HOME/.config/crab-invaders/save`
+//! `$HOME/.config/shell-shooter/save`
 
 use std::io;
 use std::path::PathBuf;
@@ -26,7 +26,7 @@ impl Save {
     pub fn save_path() -> Option<PathBuf> {
         std::env::var("HOME")
             .ok()
-            .map(|h| PathBuf::from(h).join(".config/crab-invaders/save"))
+            .map(|h| PathBuf::from(h).join(".config/shell-shooter/save"))
     }
 
     pub fn load() -> Self {
@@ -70,7 +70,7 @@ impl Save {
 
     pub fn render(&self) -> String {
         format!(
-            "# crab-invaders save (hi-score + settings)\nhi={}\nmuted={}\nvolume={:.2}\n",
+            "# shell-shooter save (hi-score + settings)\nhi={}\nmuted={}\nvolume={:.2}\n",
             self.hi, self.muted, self.volume
         )
     }
@@ -120,7 +120,7 @@ mod tests {
 
     #[test]
     fn writes_and_reads_a_real_file() {
-        let dir = std::env::temp_dir().join("crab-invaders-test-save");
+        let dir = std::env::temp_dir().join("shell-shooter-test-save");
         let path = dir.join("save");
         let s = Save {
             hi: 999,
